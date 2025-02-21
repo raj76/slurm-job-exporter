@@ -4,8 +4,8 @@ Release:  1%{?dist}
 Summary:  Prometheus exporter for stats in slurm accounting cgroups
 
 License:  Apache License 2.0
-URL:      https://github.com/guilbaults/slurm-job-exporter
-Source0:  https://github.com/guilbaults/%{name}/archive/refs/tags/v%{version}.tar.gz
+URL:      https://github.com/raj76/slurm-job-exporter
+Source0:  https://github.com/raj76/%{name}/archive/refs/tags/v%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:	systemd
