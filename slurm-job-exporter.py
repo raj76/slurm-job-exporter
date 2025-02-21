@@ -186,6 +186,9 @@ class SlurmJobCollector(object):
                     self.MONITOR_PYNVML = False
                 except ImportError:
                     self.MONITOR_DCGM = False
+                except Exception as error:
+                    print("Encountered Unexpected Error: {}".format(error))
+                    self.MONITOR_DCGM = False
 
         # using nvml as a fallback for DCGM
         if self.MONITOR_DCGM is False:
