@@ -332,7 +332,7 @@ per elapsed cycle)',
         if cgroups == 1:
             jobs_glob = "/sys/fs/cgroup/memory/slurm/uid_*/job_*"
         else:
-            jobs_glob = "/sys/fs/cgroup/system.slice/slurmstepd.scope/job_*"
+            jobs_glob = "/sys/fs/cgroup/system.slice/*_slurmstepd.scope/job_*"
         for job_dir in glob.glob(jobs_glob):
             job = job_dir.split('/')[-1].split('_')[1]
             uid, procs = cgroup_processes(job_dir)
