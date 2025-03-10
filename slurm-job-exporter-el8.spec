@@ -1,5 +1,5 @@
 Name:	  slurm-job-exporter
-Version:  0.4.5.2
+Version:  0.4.5.3
 Release:  1%{?dist}
 Summary:  Prometheus exporter for stats in slurm accounting cgroups
 
